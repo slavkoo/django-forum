@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="IE=edge" http-equiv="X-UA-Compatible">
+		<meta charset="utf-8">
+		<title>RAF-forum | Login</title>
+		<!--za stylesheet-->
+		{% load static %}
+		<link rel="stylesheet" href="{% static "/stylesheets/style.css" %}">
+	</head>
+	<body>
+		<div class="dropdown">
+			<h1>🚀 RAF Forum 🚀 </h1>
+			<form class="form-inline" name="login"  method="POST">
+				{% csrf_token %}
+				{{form.as_p}}
+				<div class="tp">
+					<button class="dropbtnWide" type="submit">Register</button>
+                    <br><h4>Vec imas nalog? <a href="/login/">Uloguj se</a></h4>
+				</div>
+			</form>
+		</div>
+		<div class="clear"></div>
+	</body>
+</html>
