@@ -1,0 +1,16 @@
+<!--
+including header content which is common for all pages
+-->
+{% extends "posts/layouts/header.html"%}
+{% block content %}
+    <h1>❌⚠️ Zelite li da obrisete ovaj post? ❌⚠️</h1>
+    <div class="dropdown">
+        <form class="form-inline" method="POST">
+            {% csrf_token %}
+            <div class="tp">
+                <button class="dropbtnWide" style="background-color: #800033" onmouseover="this.style.color=#b30047" type="submit">Brisi</button>
+                <button class="dropbtnWide" href={% url 'posts-board' %}>Nikako</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

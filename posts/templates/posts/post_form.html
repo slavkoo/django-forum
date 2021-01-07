@@ -1,0 +1,17 @@
+<!--
+including header content which is common for all pages
+-->
+{% extends "posts/layouts/header.html"%}
+{% block content %}
+    <h1>💭 Sta vam je na umu? 💭</h1>
+    <h4 style="color: #293d3d;text-align: center;"> Max 100 karaktera </h4>
+    <div class="dropdown">
+        <form class="form-inline" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <div class="tp">
+                <button class="dropbtnWide" type="submit">Post</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}

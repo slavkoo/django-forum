@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700);
+
+body {
+    background: #ABB2B9;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    color: #212121;
+}
+
+header-wrapper {
+	margin: 0,auto;
+	
+}
+a, a:active, a:hover, a:visited {
+	text-decoration: none;
+}
+
+/* Header/Navgiation */
+header {
+    position: relative;
+    background:#293d3d;
+    height: 80px;
+    width: 100%;
+	margin: 0;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+header nav ul {
+    padding: 0px;
+    position: absolute;
+    left: 5px;
+    margin: 0px;
+    list-style-type: none;
+    bottom: 20px;
+    line-height: 1;
+}
+
+header nav li {
+    display: absolute;
+    display: inline-block;
+    margin: 0px 12px 0px;
+    line-height: 1;
+    padding: 0;
+    
+}
+
+header nav li a{
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    border-bottom: 2px #fff;
+    opacity: 0.7;
+}
+
+header nav li .first {
+    margin: 0px 0px 0px;
+}
+header nav li.last {
+    margin: 0px;
+}
+
+header nav li a.active {
+    opacity: 1.0;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dropbtn {
+    background-color: #293d3d;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+  }
+
+  .dropbtnWide {
+    background-color: #293d3d;
+    color: white;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    width: 200px;
+    height: 60px;
+    border-radius: 35px;
+  }
+
+  .dropdownInput {
+    border-radius: 15px;
+  }
+
+  .dropbtnCard {
+    background-color: #293d3d;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+  }
+  .dropbtnCard:hover, .dropbtnCard:focus {
+    background-color: #3e8e41;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+  }
+  
+  .dropdown {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin: auto;
+    align-self: center;
+    text-align: center;
+  }
+  
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+.card {
+    margin: auto;
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: 150px;
+    width: 900px;
+    margin-top: 40px;
+    text-align: left;
+    font-family: arial;
+    word-wrap: break-word;
+    background-color: azure;
+    position: relative;
+    padding: 10px;
+    border-radius: 10px;
+} 
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 32px 64px 0 rgba(0,0,0,0.2);
+  }
+  
+/* Add some padding inside the card container */
+
+h1 {
+    color: #fff;
+    text-align: center;
+    padding: 1em 0 0 0;
+    font-size: 3em;
+    font-weight: 700;
+}
+/*-- main --*/
+.signin-form-profile {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin: auto;
+    align-self: center;
+    text-align: center;
+}
+
+.login-form {
+    margin: 1em 0 2.5em;
+    display: inline-block;
+}
+
+/*--//signin-form--*/
+
+h2 {
+    padding: 0.5em;
+    text-align: center;
+}
+
+.form-inline {
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    border-radius: 15px;
+  }
+  
+  /* Add some margins for each label */
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  /* Style the input fields */
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the submit button */
+  .form-inline button {
+    background-color: #293d3d;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .form-inline button:hover {
+    background-color: #3e8e41;
+  }
+

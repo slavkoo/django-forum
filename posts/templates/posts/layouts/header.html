@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
+        {% if title%}
+            <title>RAF - Forum | {{title}}</title>
+        {% else %}
+            <title> RAF - Forum </title>
+        {% endif %}
+        <!--za stylesheet-->
+        {% load static %}
+        <link rel="stylesheet" href="{% static "/stylesheets/style.css" %}">
+        
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="/posts/new_post/" class="first active">POST</a></li>
+                    <li><a href="/profile/">PROFILE</a></li>
+                    <li><a href="/posts/">NEWS</a></li>
+                    <li><a href="/logout/">LOG OFF</a></li>
+                </ul>
+            </nav>
+        </header>
+        {% block content %}{% endblock %}
+    </body>
+</html>

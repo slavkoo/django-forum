@@ -1,0 +1,16 @@
+<!--
+including header content which is common for all pages
+-->
+{% extends "posts/layouts/header.html"%}
+{% block content %}
+    <h1>✏️ Izmenite vas post ✏️</h1>
+    <div class="dropdown">
+        <form class="form-inline" method="POST">
+            {% csrf_token %}
+            {{form.as_p}}
+            <div class="tp">
+                <button class="dropbtnWide" type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+{% endblock content %}
